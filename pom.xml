@@ -20,6 +20,7 @@
 
 	<!-- 所有项目都会用到的依赖 -->
 	<dependencies>
+		<!-- spring mvc 必备jar 开始 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -30,6 +31,12 @@
 			<artifactId>spring-web</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<dependency>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>spring-webmvc</artifactId>
+	        <version>${spring.version}</version>
+	    </dependency>
+	    <!-- spring mvc 必备jar 结束 -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -42,24 +49,23 @@
 			<scope>test</scope>
 			<version>${junit.version}</version>
 		</dependency>
-
+		<!-- httpclient 开始 -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>${httpclient.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
 			<version>${httpclient.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpmime</artifactId>
 			<version>${httpclient.version}</version>
 		</dependency>
+		<!-- httpclient 结束 -->
 		<!-- cxf start -->
 		<!-- <dependency>
 			<groupId>org.apache.cxf</groupId>
